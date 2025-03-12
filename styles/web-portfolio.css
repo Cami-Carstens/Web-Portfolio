@@ -1,0 +1,193 @@
+
+
+.navbar-nav .active {
+   border-bottom: 2px solid black;
+
+}
+.nav-link:hover {
+    background-color: gray;
+   
+}
+.indexHeading {
+    font-size: 4.5em;
+    color:  rgb(52, 24, 74);
+    text-shadow: 4px 4px 4px rgb(132, 132, 170);
+
+}
+.indexFooter {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+.indexPic {
+    border-radius: 50%;
+    border: 10px solid rgb(41, 43, 82);
+    margin-top: 100px;
+}
+
+
+
+.homeLinks {
+    font-size: 2em;
+    font: white;
+
+}
+.homeLinks ul li a{
+    color:  rgb(52, 24, 74);
+    text-shadow: 4px 4px 4px rgb(132, 132, 170);
+    font-size: 1.5em;
+
+
+}
+.homeLinks ul {
+    list-style-type: none;
+}
+
+.aboutMeNav {
+   margin-top: 25px;
+
+}
+
+
+.aboutCard1, .aboutCard2, .aboutCard3, .aboutCard4 {
+    background-color: rgb(235, 205, 234);
+}
+
+
+.aboutMeText, .aboutMeText2, .aboutMeText3, .aboutMeText4 {
+    list-style-type: none;
+
+}
+
+
+
+.courseWorkHeader {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    color: rgb(20, 17, 71);
+    border-radius: 25px;
+    text-shadow: 2px 2px 2px  rgb(91, 87, 87);
+    font-weight: 700;
+   
+}
+.courseWorkHeader h1 {
+    font-size: 3.5em;
+}
+.courseSample {
+   
+    color: rgb(20, 17, 71);
+    text-shadow: 4px 4px 4px  rgb(154, 149, 149);
+  
+}
+.courseWorkContainer {
+    margin-top: 20px;
+    border: 5px solid rgb(20, 17, 71);
+
+}
+
+.courseWorkContainer h3 {
+    font-size: 2.5em;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.courseWorkFooter {
+    background-color: rgb(214, 134, 29);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+main {
+    min-height: 600px;
+}
+.right-aligned-accordion {
+    max-width: 450px;
+    margin-left: auto;
+}
+
+
+.contactMain {
+    background-image: url("images/about-bg.jpg");
+}
+
+.contactPic {
+    border-radius: 10%;
+    height: 200px;
+}
+
+.accordion-item1, .accordion-item2, .accordion-item3 {
+    background-color: rgb(212, 216, 218);
+}
+.accordion-header .accordion-button {
+    background-color:rgb(154, 159, 161); 
+}
+
+.pdfResume {
+    margin-top: 0 !important; 
+   
+}
+
+.pdf {
+    margin-top: -50px;
+    
+}
+
+.resumeNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050; 
+    background-color: white; 
+}
+
+.vertical-name {
+    writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(181, 195, 200);
+    text-shadow: 2px 2px 2px rgb(36, 38, 39);
+    letter-spacing: 4px;
+}
+
+.portfolioFooter {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+    .vertical-name {
+      writing-mode: unset; 
+      text-orientation: unset; 
+      font-size: 1.5rem; 
+      letter-spacing: normal; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
