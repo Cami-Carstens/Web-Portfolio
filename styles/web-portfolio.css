@@ -98,7 +98,7 @@
 }
 
 .courseWorkFooter {
-    background-color: rgb(214, 134, 29);
+ 
     position: relative;
     bottom: 0;
     left: 0;
@@ -106,9 +106,7 @@
     width: 100%;
     margin-top: 50px;
 }
-main {
-    min-height: 600px;
-}
+
 .right-aligned-accordion {
     max-width: 450px;
     margin-left: auto;
@@ -136,10 +134,7 @@ main {
    
 }
 
-.pdf {
-    margin-top: -50px;
-    
-}
+
 
 .resumeNav {
     position: fixed;
@@ -154,8 +149,8 @@ main {
     text-orientation: upright; 
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(181, 195, 200);
-    text-shadow: 2px 2px 2px rgb(36, 38, 39);
+    color: rgb(40, 38, 38);
+    text-shadow: 2px 2px 2px rgb(208, 215, 219);
     letter-spacing: 4px;
 }
 
@@ -166,6 +161,11 @@ main {
     right: 0;
     width: 100%;
     margin-top: 50px;
+}
+.resumeFooter {
+    
+    position: relative;
+
 }
 
 
