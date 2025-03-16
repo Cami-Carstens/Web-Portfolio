@@ -8,12 +8,7 @@
     background-color: gray;
    
 }
-.indexHeading {
-    font-size: 4.5em;
-    color:  rgb(52, 24, 74);
-    text-shadow: 4px 4px 4px rgb(132, 132, 170);
 
-}
 .indexFooter {
     position: relative;
     bottom: 0;
@@ -24,8 +19,7 @@
 }
 .indexPic {
     border-radius: 50%;
-    border: 10px solid rgb(41, 43, 82);
-    margin-top: 100px;
+    border: 5px solid rgb(41, 43, 82);
 }
 
 
@@ -46,19 +40,18 @@
     list-style-type: none;
 }
 
-.aboutMeNav {
-   margin-top: 25px;
 
-}
 
 
 .aboutCard1, .aboutCard2, .aboutCard3, .aboutCard4 {
-    background-color: rgb(235, 205, 234);
+    background-color: rgb(41, 43, 82);
+    
 }
 
 
 .aboutMeText, .aboutMeText2, .aboutMeText3, .aboutMeText4 {
     list-style-type: none;
+    color: white;
 
 }
 
@@ -67,7 +60,7 @@
 .courseWorkHeader {
     margin-top: 15px;
     margin-bottom: 50px;
-    color: rgb(20, 17, 71);
+    color: white;
     border-radius: 25px;
     text-shadow: 2px 2px 2px  rgb(91, 87, 87);
     font-weight: 700;
@@ -78,15 +71,11 @@
 }
 .courseSample {
    
-    color: rgb(20, 17, 71);
-    text-shadow: 4px 4px 4px  rgb(154, 149, 149);
+    color: white;
+    text-shadow: 2px 2px 2px  rgb(154, 149, 149);
   
 }
-.courseWorkContainer {
-    margin-top: 20px;
-    border: 5px solid rgb(20, 17, 71);
 
-}
 
 .courseWorkContainer h3 {
     font-size: 2.5em;
@@ -129,20 +118,11 @@
     background-color:rgb(154, 159, 161); 
 }
 
-.pdfResume {
-    margin-top: 0 !important; 
-   
-}
 
 
 
-.resumeNav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1050; 
-    background-color: white; 
-}
+
+
 
 .vertical-name {
     writing-mode: vertical-rl; 
@@ -164,7 +144,7 @@
 }
 .resumeFooter {
     
-    position: relative;
+   
 
 }
 
