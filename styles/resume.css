@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #4979c6, #0f172a);
+    color: white;
+}
+
+
+.glass {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+/* Accordion */
+.accordion-item {
+    background: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 12px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #0ea5e9;
+    color: white;
+}
+
+.accordion-body {
+    background: rgba(255,255,255,0.08);
+    color:white;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+/* Profile image */
+.profile-img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* PDF */
+.glass-pdf {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+    transition: 0.3s;
+}
+
+.glass-pdf:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.55);
+}
+
+.glass-pdf object {
+    width: 100%;
+    display: block;
+}

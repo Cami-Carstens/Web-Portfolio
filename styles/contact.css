@@ -1,0 +1,25 @@
+.contact-wrapper {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.glass-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+/* Contact image */
+.contact-img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+iframe {
+    border-radius: 16px;
+}

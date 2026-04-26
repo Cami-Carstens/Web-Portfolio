@@ -1,143 +1,274 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/web-portfolio.css">
-    <title>Cami Carstens</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="icon" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Cami Carstens</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <style>
-  body { background-image: url("images/gray-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url("images/gray-bg.jpg") ;
+    color: white;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.78);
+    z-index: -1;
+}
+       /* Navbar */
+        .navbar {
+            background: rgba(245, 243, 243, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-link {
+            color: #e2e8f0 !important;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #8fb4b0 !important;
+        }
+
+
+.contact-wrapper {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.vertical-name {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+
+.glass-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.12);
+}
+
+
+.accordion-item {
+    background: transparent;
+    border: none;
+}
+
+.accordion-button {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 12px !important;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #0ea5e9;
+    color: white;
+}
+
+.accordion-body {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+/* ===== IMAGE ===== */
+.contact-img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+iframe {
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+        /* Footer */
+        footer {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
 </style>
+</head>
 
-  </head>
-<body class="bodyContact">
-    <header>
-        <nav class="navbar navbar-expand-lg fw-bold bg-white">
-            <div class="container-fluid mb-2 mt-3">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="contactNav collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item fw-bold">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
 
-                  <li class="nav-item fw-bold">
-                    <a class="nav-link" href="resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item fw-bold">
-                    <a class="nav-link active" aria-current="page" href="contact.html">Contact Me</a>
-                  </li>
-                  <li class="nav-item fw-bold">
-                    <a class="nav-link" href="course-work.html">Course Work</a>
-                  </li>
-                  <li class="nav-item fw-bold">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                </ul>
-              </div>
+        <!-- LOGO + NAME -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="./images/CSC-logo.jpg" alt="Cami Logo" width="65" height="55" style="border-radius: 8px;">
+            <span class="fw-semibold text-white ms-2">Cami</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-work.html">Course Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main class="container contact-wrapper">
+
+  <div class="row align-items-center g-4 w-100">
+
+    <!-- NAME
+    <div class="col-lg-3 text-lg-start text-center">
+      <h1 class="vertical-name">Cami Carstens</h1>
+    </div>
+       IMAGE -->
+    <!-- <div class="col col-lg-2 col-sm-4 text-center">
+      <img src="images/cami.jpg" class="contact-img" alt="Cami">
+    </div> -->
+
+    <!-- CONTACT ACCORDION -->
+    <div class="col-lg-3">
+
+      <div class="accordion" id="contactAcc">
+
+        <div class="accordion-item">
+          <h2>
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#email">
+              Email
+            </button>
+          </h2>
+          <div id="email" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="mailto:CSCarstens416@gmail.com">CSCarstens416@gmail.com</a>
             </div>
-          </nav>
-    </header>
-
-<main class="contactMain">
-  <div class="container text-center m-2">
-    <div class="row">
-      <div class="col col-lg-3 col-md-3 col-12 text-end d-flex align-items-center justify-content-start name-column">
-        <h1 class="vertical-name">Cami Carstens</h1>
-      </div>
-      <div class="col-lg-3 col-md-3 col-12">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item1">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Email Me
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <a href="mailto:CSCarstens@gmail.com">CSCarstens416@gmail.com</a></div>
           </div>
         </div>
-        <div class="accordion-item2">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 
+        <div class="accordion-item">
+          <h2>
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#phone">
+              Phone
             </button>
           </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="phone" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <a href="tel:1314-566-5579"></a></div>
+              <a href="mailto:CSCarstens416@gmail.com">314-566-5579</a>
+            </div>
           </div>
         </div>
-        <div class="accordion-item3">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-             Find me on socials
+
+        <div class="accordion-item mt-2">
+          <h2>
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#social">
+              Socials
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="social" class="accordion-collapse collapse">
             <div class="accordion-body">
               <i class="bi bi-github"></i>
-              <a href="https://github.com/Cami-Carstens">Github</a>
+              <a href="https://github.com/Cami-Carstens"> GitHub</a>
+              <br>
               <i class="bi bi-linkedin"></i>
-              <a href="https://www.linkedin.com/in/cami-carstens-7a5442355/">LinkedIn</a>
+              <a href="https://www.linkedin.com/"> LinkedIn</a>
             </div>
           </div>
         </div>
-        </div>
-      </div>
 
- 
-    <!--JotForm to contact me-->
-    <div class="col col-lg- col-md-3 col-12">
-    <iframe
-      id="JotFormIFrame-250687956757175"
-      title="Modern Contact Form"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen"
-      src="https://form.jotform.com/250687956757175"
-      frameborder="0"
-      style="min-width:75%;max-width:100%;height:400px;border:none;"
-      scrolling="no"
-    >
-    </iframe>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-250687956757175']", "https://form.jotform.com/")</script>
-  </div>
-  <div class="col col-lg-3 col-md-3 col-12 ml-2">
-    <img src="images/cami-2.jpg" class="contactPic" alt="pic of contact">
+      </div>
     </div>
+
+    <!-- FORM -->
+    <!-- <div class="col-lg-4">
+      <iframe
+        id="JotFormIFrame-250687956757175"
+        title="Contact Form"
+        src="https://form.jotform.com/250687956757175"
+        width="100%"
+        height="420"
+      ></iframe>
+    </div> -->
+
+  <div class="col col-lg-2 col-sm-6 flex">
+      <img src="images/cami.jpg" class="contact-img" alt="Cami">
+    </div> 
+
+
   </div>
-  </div>
-  </main>
 
+</main>
 
-  <footer class="text-white py-3 bg-white">
-    <div class="container">
-      <div class="row d-flex">
-        <div class="col-md-4 text-center text-md-start text-dark">&copy; 2025 Copyright</div>
-        <div class="col-md-4 text-center text-dark">Cami Carstens
-        </div>
-        <div class="col-md-4 text-center text-md-end">
-          <i class="bi bi-github text-dark"></i>
-          <a href="https://github.com/Cami-Carstens">Github</a>
-          <i class="bi bi-linkedin text-dark"></i>
-          <a href="https://www.linkedin.com/in/cami-carstens-7a5442355/">LinkedIn</a>
-        </div></div>
-      </div>
-
-    </footer>
+<!-- FOOTER -->
+<footer class="text-center py-4 mt-5">
+    <p>&copy; 2026 Cami Carstens</p>
+    <div>
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/Cami-Carstens">GitHub</a>
+        |
+        <i class="bi bi-linkedin"></i>
+        <a href="https://www.linkedin.com/in/cami-carstens-7a5442355/">LinkedIn</a>
+    </div>
+</footer>
 
 </body>
-</html>
+</html> -->
+
+
+
+
+
+
+
+

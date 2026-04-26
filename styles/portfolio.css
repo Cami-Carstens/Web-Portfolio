@@ -1,0 +1,60 @@
+    body {
+          font-family: 'Poppins', sans-serif;
+          background: linear-gradient(135deg, #0f172a, #1e293b, #4979c6, #0f172a);
+         color: white;
+          
+        }
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero p {
+    color: #94a3b8;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.05);
+    border: none;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    color: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(56,189,248,0.3);
+}
+
+.tech-icons i {
+    font-size: 1.6rem;
+    margin: 6px;
+    opacity: 0.8;
+}
+
+.tech-icons i:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+        .btn-modern {
+            background:  #939595;
+            border: none;
+            color: black;
+            border-radius: 999px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .btn-modern:hover {
+            background:#232944;
+        }
