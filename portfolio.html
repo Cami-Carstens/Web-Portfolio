@@ -23,8 +23,6 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-
-        <!-- LOGO + NAME -->
         <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
             <img src="./images/CSC-logo.jpg" alt="Cami Logo" width="65" height="55" style="border-radius: 8px;">
             <span class="fw-semibold text-white ms-2">Cami</span>
@@ -38,15 +36,12 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="course-work.html">Course Work</a></li>
                 <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
             </ul>
         </div>
-
     </div>
 </nav>
-
 
 <section class="hero">
     <h1>Cami Carstens</h1>
@@ -55,159 +50,240 @@
 
 <!-- PROJECTS -->
 <div class="container">
-
     <div class="row g-4">
 
-        <!-- Cards -->
-  <div class="card p-3 h-100">
+        <!-- Novel Nook -->
+        <div class="col-md-4">
+            <div class="card project-card p-3">
                 <h5 class="card-title">Novel Nook</h5>
-                <img src="images/Screenshot 2026-03-12 141525.png" class="card-img-top mb-3" alt="Novel Nook Screenshot">
-                <p>ASP.NET MVC bookstore application.</p>
-                <div class="badge-container">
-                    <span class="badge-tech">ASP.NET</span>
-                    <span class="badge-tech">C#</span>
-                    <span class="badge-tech">MVC</span>
-                    <span class="badge-tech">SQL</span>
-                </div>
+                <img src="images/Screenshot 2026-03-12 141525.png" class="card-img-top" alt="Novel Nook Screenshot">
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>Full-stack ASP.NET MVC bookstore web application.</strong> Users can browse books, search by title/author/genre, add items to a shopping cart, and complete purchases.</p>
+                        
+                        <div class="badge-container">
+                            <span class="badge-tech">ASP.NET</span>
+                            <span class="badge-tech">C#</span>
+                            <span class="badge-tech">MVC</span>
+                            <span class="badge-tech">SQL</span>
+                        </div>
 
-                <div class="tech-icons">
-                    <i class="devicon-dotnetcore-plain colored"></i>
-                    <i class="devicon-csharp-plain colored"></i>
-                    <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        <div class="tech-icons">
+                            <i class="devicon-dotnetcore-plain colored"></i>
+                            <i class="devicon-csharp-plain colored"></i>
+                            <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://www.youtube.com/watch?v=-kPWSVJoiNM" class="btn btn-modern">Watch Demo</a>
+                    </div>
                 </div>
-                <a href="https://www.youtube.com/watch?v=-kPWSVJoiNM" class="btn btn-modern">Watch Demo</a>
-  
-</div>
+            </div>
+        </div>
 
+        <!-- Issue Tracker -->
         <div class="col-md-4">
-            <div class="card p-3 h-100">
+            <div class="card project-card p-3">
                 <h5 class="card-title">Issue Tracker</h5>
-                <img src="images/BugTracker.png" class="card-img-top mb-3" alt="Issue Tracker Screenshot">
-                <p>Track bugs and users with full-stack functionality.</p>
-                <div class="badge-container">
-                <span class="badge-tech">React</span>
-                <span class="badge-tech">TypeScript</span>
-                <span class="badge-tech">Node.js</span>
-                <span class="badge-tech">Express</span>
-                <span class="badge-tech">MongoDB</span>
-                <span class="badge-tech">REST API</span>
+                <img src="images/BugTracker.png" class="card-img-top" alt="Issue Tracker Screenshot">
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>Modern full-stack bug and issue tracking application.</strong> Create, assign, track, and resolve issues with real-time updates, authentication, and filtering.</p>
+                        
+                        <div class="badge-container">
+                            <span class="badge-tech">React</span>
+                            <span class="badge-tech">TypeScript</span>
+                            <span class="badge-tech">Node.js</span>
+                            <span class="badge-tech">Express</span>
+                            <span class="badge-tech">MongoDB</span>
+                            <span class="badge-tech">REST API</span>
+                        </div>
+
+                        <div class="tech-icons">
+                            <i class="devicon-react-original colored"></i>
+                            <i class="devicon-typescript-plain colored"></i>
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <i class="devicon-express-original"></i>
+                            <i class="devicon-mongodb-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://issue-tracker-464976337656.us-central1.run.app" class="btn btn-modern">Live App</a>
+                        <a href="https://youtu.be/NpgC_W9aSM4" class="btn btn-modern">Watch Demo</a>
+                    </div>
                 </div>
-            <div class="tech-icons">
-            <i class="devicon-react-original colored"></i>
-            <i class="devicon-typescript-plain colored"></i>
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-express-original"></i>
-            <i class="devicon-mongodb-plain colored"></i>
-</div>
-            <a href="https://issue-tracker-464976337656.us-central1.run.app" class="btn btn-modern">Live App</a>
-            <a href="https://youtu.be/NpgC_W9aSM4" class="btn btn-modern">Demo</a>
             </div>
         </div>
 
+        <!-- Web Portfolio -->
         <div class="col-md-4">
-        <div class="card p-3 h-100">
-            <h5 class="card-title">Web Portfolio</h5>
-            <img src="images/WebPortfolio.jpeg" class="card-img-top mb-3" alt="Web Portfolio Screenshot">
-            <p>Built with HTML, CSS, Flexbox, and Bootstrap.</p>
-            <div class="badge-container">
-                <span class="badge-tech">HTML</span>
-                <span class="badge-tech">CSS</span>
-                <span class="badge-tech">Bootstrap</span>
-                <span class="badge-tech">Flexbox</span>
-            </div>
+            <div class="card project-card p-3">
+                <h5 class="card-title">Web Portfolio</h5>
+                <img src="images/WebPortfolio.jpeg" class="card-img-top" alt="Web Portfolio Screenshot">
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>This responsive personal portfolio website.</strong> Built with HTML5, CSS3 (Flexbox + Grid), and Bootstrap 5. Clean, modern, and mobile-first.</p>
+                        
+                        <div class="badge-container">
+                            <span class="badge-tech">HTML</span>
+                            <span class="badge-tech">CSS</span>
+                            <span class="badge-tech">Bootstrap</span>
+                            <span class="badge-tech">Flexbox</span>
+                        </div>
 
-            <div class="tech-icons">
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
-                <i class="devicon-bootstrap-plain colored"></i>
-            </div>
-
-    <a href="https://cami-carstens.github.io/Web-Portfolio/" class="btn btn-modern">View Project</a>
+                        <div class="tech-icons">
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-bootstrap-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://cami-carstens.github.io/Web-Portfolio/" class="btn btn-modern">View Live Site</a>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- HTML Practice Cards -->
         <div class="col-md-4">
-            <div class="card p-3 h-100">
+            <div class="card project-card p-3">
                 <h5 class="card-title">HTML Practice Cards</h5>
-                <img src="images/HTML_SampleQ.png" class="card-img-top mb-3" alt="HTML Practice Cards Screenshot">
-                <p>Interactive study cards with progress tracking.</p>
-                <div class="badge-container">
-                    <span class="badge-tech">JavaScript</span>
-                    <span class="badge-tech">HTML</span>
-                    <span class="badge-tech">CSS</span>
-                </div>
+                <img src="images/HTML_SampleQ.png" class="card-img-top" alt="HTML Practice Cards Screenshot">
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>Interactive flashcard-style study tool.</strong> Flip cards, track progress, mark mastered items, and review using LocalStorage.</p>
+                        
+                        <div class="badge-container">
+                            <span class="badge-tech">JavaScript</span>
+                            <span class="badge-tech">HTML</span>
+                            <span class="badge-tech">CSS</span>
+                        </div>
 
-                <div class="tech-icons">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
+                        <div class="tech-icons">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://cami-carstens.github.io/previous-work/JS_CH15_LAB/" class="btn btn-modern">View Project</a>
+                    </div>
                 </div>
-                <a href="https://cami-carstens.github.io/previous-work/JS_CH15_LAB/" class="btn btn-modern">View</a>
             </div>
         </div>
 
+        <!-- CRUD App -->
         <div class="col-md-4">
-            <div class="card p-3 h-100">
+            <div class="card project-card p-3">
                 <h5 class="card-title">CRUD App</h5>
-                <img src="images/CRUD-collegeApp.jpeg" class="card-img-top mb-3" alt="CRUD App Screenshot">
-                <p>Manage student data with full CRUD operations.</p>
-                <div class="badge-container">
-                    <span class="badge-tech">JavaScript</span>
-                    <span class="badge-tech">CRUD</span>
-                    <span class="badge-tech">Local Storage</span>
+                <img src="images/CRUD-collegeApp.jpeg" class="card-img-top" alt="CRUD App Screenshot">
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>Full CRUD student management system.</strong> Add, edit, delete, search records with validation and LocalStorage persistence.</p>
+                        
+                        <div class="badge-container">
+                            <span class="badge-tech">JavaScript</span>
+                            <span class="badge-tech">CRUD</span>
+                            <span class="badge-tech">Local Storage</span>
+                        </div>
+
+                        <div class="tech-icons">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://cami-carstens.github.io/AWD1000-final-project/" class="btn btn-modern">View Project</a>
+                    </div>
                 </div>
-                <div class="tech-icons">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                </div>
-                <a href="https://cami-carstens.github.io/AWD1000-final-project/" class="btn btn-modern">View</a>
             </div>
         </div>
 
-<div class="col-md-4">
-    <div class="card p-3 h-100">
-        <h5 class="card-title">RSS News Aggregator</h5>
-        <img src="images/Screenshot 2025-03-10 172459.png" class="card-img-top mb-3" alt="RSS News Aggregator Screenshot">
-        <p>
-            Responsive web app that pulls and displays MIT RSS feeds in a clean,
-            organized dashboard with dynamic content updates.
-        </p>
-
-        <div class="badge-container">
-            <span class="badge-tech">HTML</span>
-            <span class="badge-tech">CSS</span>
-            <span class="badge-tech">JavaScript</span>
-            <span class="badge-tech">RSS/XML</span>
-            <span class="badge-tech">Bootstrap</span>
-        </div>
-
-        <div class="tech-icons">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-        </div>
-
-        <a href="https://cami-carstens.github.io/RSS-midterm/" class="btn btn-modern">View Project</a>
-    </div>
-</div>
-
+        <!-- RSS News Aggregator -->
         <div class="col-md-4">
-            <div class="card p-3 h-100">
-                <h5 class="card-title">GitHub</h5>
-                <img src="images/Github_Repo.jpeg" class="card-img-top mb-3" alt="Github Screenshot">
-                <p>Explore my repositories and code.</p>
-                <div class="badge-container">
-                    <span class="badge-tech">Git</span>
-                    <span class="badge-tech">GitHub</span>
-                    <span class="badge-tech">Version Control</span>
+            <div class="card project-card p-3">
+                <h5 class="card-title">RSS News Aggregator</h5>
+                <img src="images/Screenshot 2025-03-10 172459.png" class="card-img-top" alt="RSS News Aggregator Screenshot">
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>Dynamic RSS news aggregator dashboard.</strong> Pulls MIT feeds with filtering, search, and refresh functionality.</p>
+                        
+                        <div class="badge-container">
+                            <span class="badge-tech">HTML</span>
+                            <span class="badge-tech">CSS</span>
+                            <span class="badge-tech">JavaScript</span>
+                            <span class="badge-tech">RSS/XML</span>
+                            <span class="badge-tech">Bootstrap</span>
+                        </div>
+
+                        <div class="tech-icons">
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-bootstrap-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://cami-carstens.github.io/RSS-midterm/" class="btn btn-modern">View Project</a>
+                    </div>
                 </div>
-                <div class="tech-icons">
-                    <i class="devicon-github-original"></i>
-                    <i class="devicon-git-plain colored"></i>
+            </div>
+        </div>
+
+        <!-- Custom Cuts -->
+        <div class="col-md-4">
+            <div class="card project-card p-3">
+                <h5 class="card-title">Custom Cuts</h5>
+                <img src="images/Screenshot 2026-03-12 140003.png" class="card-img-top" alt="Custom Cuts Screenshot">
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>Appointment booking system for a hair salon.</strong> Customer management, scheduling, and admin features built with ASP.NET MVC.</p>
+                        
+                        <div class="badge-container">
+                            <span class="badge-tech">ASP.NET</span>
+                            <span class="badge-tech">C#</span>
+                            <span class="badge-tech">MVC</span>
+                            <span class="badge-tech">SQL</span>
+                        </div>
+
+                        <div class="tech-icons">
+                            <i class="devicon-dotnetcore-plain colored"></i>
+                            <i class="devicon-csharp-plain colored"></i>
+                            <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://github.com/Cami-Carstens/awd1115-.NET-coursework/tree/master/HandsOnTests/HOT4/HOT4/HOT4" class="btn btn-modern">View Code on GitHub</a>
+                    </div>
                 </div>
-                <a href="https://github.com/Cami-Carstens" class="btn btn-modern">Visit</a>
+            </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="col-md-4">
+            <div class="card project-card p-3">
+                <h5 class="card-title">GitHub Repositories</h5>
+                <img src="images/Github_Repo.jpeg" class="card-img-top" alt="GitHub Screenshot">
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>My full collection of coding projects and contributions.</strong> Academic work, experiments, and portfolio pieces across various technologies.</p>
+                        
+                        <div class="badge-container">
+                            <span class="badge-tech">Git</span>
+                            <span class="badge-tech">GitHub</span>
+                            <span class="badge-tech">Version Control</span>
+                        </div>
+
+                        <div class="tech-icons">
+                            <i class="devicon-github-original"></i>
+                            <i class="devicon-git-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://github.com/Cami-Carstens" class="btn btn-modern">Visit GitHub Profile</a>
+                    </div>
+                </div>
             </div>
         </div>
 
