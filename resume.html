@@ -6,7 +6,6 @@
 <title>Resume & Contact | Cami Carstens</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="styles/global-styles.css">
@@ -37,163 +36,113 @@
         <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
       </ul>
     </div>
-
   </div>
 </nav>
 
 <!-- MAIN -->
 <main class="container my-5">
 
-  <div class="row g-4 align-items-start">
-
-    <!-- LEFTCONTACT -->
-    <div class="col-lg-3">
-
-      <div class="glass mb-3">
-        <h5 class="mb-3">Contact</h5>
-
-        <div class="accordion" id="contactAcc">
-
-          <div class="accordion-item">
-            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#email">
-              Email
-            </button>
-            <div id="email" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <a href="mailto:CSCarstens416@gmail.com">CSCarstens416@gmail.com</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#phone">
-              Phone
-            </button>
-            <div id="phone" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                314-566-5579
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#social">
-              Socials
-            </button>
-            <div id="social" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <i class="bi bi-github"></i>
-                <a href="https://github.com/"> GitHub</a><br>
-                <i class="bi bi-linkedin"></i>
-                <a href="https://linkedin.com/"> LinkedIn</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <img src="images/cami.jpg" class="profile-img" alt="profile">
-
+    <div class="hero-resume">
+        <h1 class="display-5 fw-semibold">Resume & Contact</h1>
+        <p class="lead text-light">Full Stack Developer </p>
     </div>
 
+    <div class="row g-5 align-items-start">
 
-<!--RESUME -->
-<div class="col-lg-6 text-center">
+        <!-- LEFT COLUMN: Contact + Photo  section -->
+        <div class="col-lg-3">
+            <div class="glass mb-4">
+                <h5 class="mb-4 d-flex align-items-center gap-2">
+                    <i class="bi bi-envelope"></i> Contact
+                </h5>
 
-    <h2 class="mb-3">Resume</h2>
+                <div class="accordion" id="contactAcc">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#emailCollapse" aria-expanded="false" aria-controls="emailCollapse">Email</button>
+                        </h2>
+                        <div id="emailCollapse" class="accordion-collapse collapse" data-bs-parent="#contactAcc">
+                            <div class="accordion-body">
+                                <a href="mailto:CSCarstens416@gmail.com" class="text-white">CSCarstens416@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phoneCollapse" aria-expanded="false" aria-controls="phoneCollapse">Phone</button>
+                        </h2>
+                        <div id="phoneCollapse" class="accordion-collapse collapse" data-bs-parent="#contactAcc">
+                            <div class="accordion-body">314-566-5579</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#socialCollapse" aria-expanded="false" aria-controls="socialCollapse">Socials</button>
+                        </h2>
+                        <div id="socialCollapse" class="accordion-collapse collapse" data-bs-parent="#contactAcc">
+                            <div class="accordion-body">
+                                <i class="bi bi-github"></i> <a href="https://github.com/Cami-Carstens">GitHub</a><br><br>
+                                <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/cami-carstens-7a5442355/">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="glass-pdf">
-        <object 
-            data="CamiCarstensResume1.pdf"
-            type="application/pdf"
-            width="100%"
-            height="750">
-        </object>
+            <div class="text-center">
+                <img src="images/cami.jpg" class="profile-img" alt="Cami Carstens">
+            </div>
+        </div>
+
+        <!-- CENTER: Resume PDF -->
+        <div class="col-lg-6">
+            <h2 class="mb-4 text-center">My Resume</h2>
+            <div class="glass-pdf">
+                <object 
+                    data="CamiCarstensResume1.pdf"
+                    type="application/pdf"
+                    width="100%"
+                    height="780">
+                </object>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Info -->
+        <div class="col-lg-3">
+            <div class="glass">
+                <h5 class="section-title">Education</h5>
+                <div class="mb-4">
+                    <strong>Ranken Technical College</strong><br>
+                    Web Development • 2025–2026
+                </div>
+
+                <h5 class="section-title mt-5">Technical Skills</h5>
+                <div class="mb-4">
+                    JavaScript • C# • HTML/CSS<br>
+                    Bootstrap • React • Node.js<br>
+                    SQL • MongoDB • ASP.NET • Python
+                </div>
+
+                <h5 class="section-title mt-5">Soft Skills</h5>
+                <div>
+                    Reliable • Hardworking • Team Player<br>
+                    Adaptable • Creative Problem Solver
+                </div>
+            </div>
+        </div>
+
     </div>
-
-</div>
-
-    <!-- RIGHT ACCORDION -->
-    <div class="col-lg-3">
-
-      <div class="accordion" id="infoAcc">
-
-        <div class="accordion-item">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#edu">
-            Education
-          </button>
-          <div id="edu" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Ranken Technical College<br>
-              Web Development 2025–2026
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#proj">
-            Projects
-          </button>
-          <div id="proj" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              RSS News Aggregator<br>
-              <a href="https://cami-carstens.github.io/RSS-midterm" class="btn btn-modern">View Project</a>
-            </div>
-          </div>
-
-            <div id="proj" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              ASP.NET MVC bookstore application<br>
-              <a href="https://www.youtube.com/watch?v=-kPWSVJoiNM" class="btn btn-modern">View Demo</a>
-            </div>
-          </div>
-
-            <div id="proj" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Issue Tracker<br>
-                <a href="https://issue-tracker-464976337656.us-central1.run.app" class="btn btn-modern">Live App</a>
-                <a href="https://youtu.be/NpgC_W9aSM4" class="btn btn-modern">Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#skills">
-            Technical Skills
-          </button>
-          <div id="skills" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              JavaScript, C#, HTML, CSS<br>
-              Bootstrap, Tailwind<br>
-              SQL, MongoDB
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#soft">
-            Soft Skills
-          </button>
-          <div id="soft" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Reliable, hardworking,<br>
-              consistent, team player
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="text-center py-4">
-  <p>&copy; 2026 Cami Carstens</p>
-  <a href="#">GitHub</a> | <a href="#">LinkedIn</a>
+<footer class="text-center py-5">
+    <p>&copy; 2026 Cami Carstens</p>
+    <div class="mt-2">
+        <a href="https://github.com/Cami-Carstens" class="text-light mx-3">GitHub</a>
+        <a href="https://www.linkedin.com/in/cami-carstens-7a5442355/" class="text-light mx-3">LinkedIn</a>
+    </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
