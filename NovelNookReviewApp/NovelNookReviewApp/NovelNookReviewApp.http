@@ -1,0 +1,6 @@
+@NovelNookReviewApp_HostAddress = http://localhost:5194
+
+GET {{NovelNookReviewApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
